@@ -1,0 +1,29 @@
+{
+  "name": "sastosaaman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishjoshi1999/sastosaaman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anishjoshi1999/sastosaaman/issues"
+  },
+  "homepage": "https://github.com/anishjoshi1999/sastosaaman#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.9.0"
+  }
+}
