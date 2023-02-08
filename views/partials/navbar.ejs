@@ -4,8 +4,13 @@
     <img src="#" width="200" height="55" alt="SastoSaaman">
   </a>
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
-    <li><a href="#" class="nav-link px-2 link-secondary">Submit</a></li>
+    <li><a href="/saaman" class="nav-link px-2 link-secondary">Home</a></li>
+    <li><a href="/saaman/login" class="nav-link px-2 link-secondary">Login</a></li>
+    <li><a href="/saaman/register" class="nav-link px-2 link-secondary">Register</a></li>
   </ul>
+  <div class="col-md-3 text-end">
+    <form method="POST" action="/search">
+      <input type="search" name="searchTerm" class="form-control" placeholder="Search..." aria-label="Search">
+    </form>
+  </div>
 </header>
