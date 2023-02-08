@@ -5,15 +5,16 @@ const User = require('../models/user')
 const passport = require('passport')
 const { isAuthenticated } = require('../passportConfig')
 
-router.get('/',(req,res)=> {
+router.get('/', (req, res) => {
     res.render('sastoSaaman/index')
 })
 
-router.get('/register',(req,res)=> {
+
+router.get('/register', (req, res) => {
     res.render("authenticate/register/new")
 })
-router.post('/register',async(req,res)=> {
-    const {username,email,password,contactNumber} = req.body
+router.post('/register', async (req, res) => {
+    const { username, email, password, contactNumber } = req.body
     try {
         const newUser = await User.create({
             username,
@@ -29,7 +30,7 @@ router.post('/register',async(req,res)=> {
         res.send(error)
     }
 })
-router.get('/login',(req,res)=> {
+router.get('/login', (req, res) => {
     res.render("authenticate/login/new")
 })
 router.post('/login', passport.authenticate("local", {

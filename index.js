@@ -10,6 +10,7 @@ const session = require('express-session')
 const methodOverride = require('method-override')
 const {initializePassport} = require('./passportConfig')
 initializePassport(passport)
+const { isAuthenticated } = require('./passportConfig')
 // Importing Routes
 const allSaaman = require('./routes/index')
 
@@ -44,10 +45,10 @@ app.use(passport.session())
 // override with POST having ?_method=DELETE
 app.use(methodOverride('_method'))
 
-
 // Routes
 app.get('/',(req,res)=> {
-    res.redirect('/saaman')
+    // Showing all the saamans 
+    res.render("home")
 })
 
 // Saaman Routes
